@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --light-gary: #cccccc;
+  --red: #f76d6d;
+  --yellow: #ffcd30;
+  --light-yellow: #ffcf318d;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 0;
+  user-select: none;
+  background-color: var(--black);
+  font-family: Mukta;
+}
+.container-add {
+  width: 25em;
+  background-color: var(--white);
+  padding: 1em;
+  border-radius: 0.4em;
+  margin: 6em 0 0 0;
+}
+.container-add .section-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-add #text {
+  font-family: Mukta;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 15em;
+  padding: 0.3em;
+  margin: 0 1em 0 0;
+  border: 0.15em solid var(--light-gary);
+  border-radius: 0.4em;
+}
+.section-add #text:focus {
+  border: 0.15em solid var(--black);
+  border-radius: 0.4em;
+}
+.section-add #text.error {
+  animation: shake 0.1s linear 10;
+  border: 0.15em solid var(--red);
+}
+.section-add .btn-task {
+  width: 5.5em;
+  padding: 0.35em;
+  background-color: var(--yellow);
+  color: var(--white);
+  border-radius: 0.4em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 0.15em solid var(--yellow);
+}
+.section-add .btn-task:hover {
+  color: var(--yellow);
+  background-color: var(--white);
+  transition: all 0.3s ease;
+  border: 0.15em solid var(--yellow);
+}
+.container-tasks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25em;
+  background-color: var(--white);
+  padding: 1em;
+  border-radius: 0.4em;
+  margin: 1em 0 0 0;
+}
+.container-tasks .task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 24.8em;
+  background-color: var(--light-yellow);
+  padding: 0.6em;
+  border-radius: 0.3em;
+  margin: 0.3em;
+}
+.task .textTask {
+  font-size: 1rem;
+}
+.task .wrapperBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.task .delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.task .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.task .delete i,
+.check i {
+  color: var(--white);
+  font-size: 1.4rem;
+}
+.completed {
+  text-decoration: line-through;
+  text-decoration-color: var(--red);
+  text-decoration-thickness: 0.15rem;
+  color: var(--red);
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0.12em);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-0.12em);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

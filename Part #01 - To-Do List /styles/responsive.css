@@ -1,0 +1,14 @@
+/*--Smartphones--*/
+@media screen and (max-width: 480px) {
+  .container-add {
+    margin: 4em 0 0 0;
+    width: 17em;
+  }
+  .container-tasks {
+    width: 17em;
+    padding: 0.5em 1em;
+  }
+  .container-tasks .task {
+    width: 16.8em;
+  }
+}
