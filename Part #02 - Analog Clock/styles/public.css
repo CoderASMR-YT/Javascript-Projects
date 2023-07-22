@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --light-pink: #ec1490;
+  --pink: rgba(251, 0, 144, 0.288);
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  min-height: 100vh;
+  font-family: Orbitron;
+  background-color: var(--black);
+}
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 35em;
+  width: 35em;
+  border-radius: 50%;
+  background-color: var(--black);
+  box-shadow: -0.18em -0.18em 0.43em var(--light-pink),
+    0.12em 0.12em 0.31em var(--pink);
+}
+.clock .num {
+  position: absolute;
+  inset: 1.1em;
+  text-align: center;
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.clock .hand-clock {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 0.62em;
+  width: 0.62em;
+}
+.clock .hand-clock::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  z-index: 100;
+  background-color: var(--black);
+  border: 0.25em solid var(--light-pink);
+}
+.hand-clock .hand {
+  position: absolute;
+  bottom: 0;
+  border-radius: 1.6em;
+  transform-origin: bottom;
+  width: 0.2em;
+}
+.hand-clock .hr {
+  height: 8em;
+  background-color: var(--white);
+}
+.hand-clock .min {
+  height: 11em;
+  background-color: var(--white);
+}
+.hand-clock .sec {
+  height: 12em;
+  background-color: var(--light-pink);
+}
