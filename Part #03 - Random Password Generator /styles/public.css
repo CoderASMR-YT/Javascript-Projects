@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --white: #ffffff;
+  --light-gray: #c4c2c2;
+  --dark-green: #236965;
+  --green: #349191;
+  --light-green: #5fd528;
+  --red: #f76d6d;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Montserrat;
+  user-select: none;
+  background-color: var(--dark-green);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5em;
+  width: 24em;
+  background-color: var(--white);
+  border-radius: 0.4em;
+}
+.container h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.container #output {
+  border: 0.15em solid var(--light-gray);
+  margin: 1.8em;
+  padding: 0.4em;
+  width: 16em;
+  border-radius: 0.4em;
+  font-size: 1.1rem;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+.container #output::placeholder {
+  color: var(--light-gray);
+}
+.container #output.copy {
+  border: 0.15em solid var(--light-green);
+  background-color: var(--white);
+}
+.container #output.error {
+  border: 0.15em solid var(--red);
+}
+.wrapper-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 19em;
+}
+.wrapper-btn .generator,
+.copy {
+  width: 8em;
+  padding: 0.8em;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 0.5em;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 0.15em solid var(--green);
+  transition: all 0.3s ease;
+}
+.wrapper-btn .generator:hover,
+.copy:hover {
+  color: var(--green);
+  background-color: var(--white);
+  transition: all 0.3s ease;
+}

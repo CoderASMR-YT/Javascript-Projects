@@ -1,0 +1,22 @@
+/*--Smartphones--*/
+@media screen and (max-width: 480px) {
+  .container {
+    width: 16em;
+  }
+  .container h1 {
+    font-size: 1rem;
+  }
+  .container #output {
+    width: 12.5em;
+    font-size: 1rem;
+    margin: 1.5em;
+  }
+  .wrapper-btn {
+    width: 13em;
+  }
+  .wrapper-btn .generator,
+  .copy {
+    width: 7em;
+    font-size: 0.8rem;
+  }
+}
