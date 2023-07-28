@@ -1,0 +1,7 @@
+/*  Smartphones--*/
+@media screen and (max-width: 480px) {
+  .container {
+    width: 17em;
+    padding: 1em;
+  }
+}
