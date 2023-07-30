@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --light-gray: #c4c2c2;
+  --blue: #0a2c45;
+  --dark-blue: #07253a;
+  --light-blue: #2681c7;
+  --transparent: #07253aba;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  user-select: none;
+  font-family: Poppins;
+  background-color: var(--blue);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 2em;
+  border-radius: 0.5em;
+}
+.container span i {
+  font-size: 3.5rem;
+  color: var(--dark-blue);
+}
+.container h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.5em 0;
+}
+.container .input-verify {
+  padding: 1em;
+}
+.input-verify .input-num {
+  width: 2em;
+  border-bottom: 0.1em solid var(--light-gray);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.input-verify .input-num:focus {
+  border-bottom: 0.1em solid var(--blue);
+}
+.container .resend {
+  margin: 3em 0;
+}
+.resend p {
+  font-size: 1rem;
+  color: var(--black);
+}
+.resend p a {
+  text-decoration: none;
+  color: var(--light-blue);
+  cursor: pointer;
+}
+.container .btn-verify {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.4em 2.5em;
+  border-radius: 0.4em;
+  background-color: var(--transparent);
+  color: var(--white);
+  border: 0.2em solid var(--dark-blue);
+  transition: all 0.3s ease;
+}
+.container .btn-verify.active {
+  background-color: var(--dark-blue);
+  pointer-events: auto;
+}
+.container .btn-verify.active:hover {
+  color: var(--dark-blue);
+  background-color: var(--white);
+  border: 0.2em solid var(--dark-blue);
+  transition: all 0.3s ease;
+}

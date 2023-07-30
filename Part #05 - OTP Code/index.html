@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>OTP Code</title>
+  </head>
+  <body>
+    <div class="container">
+      <span>
+        <i class="fa-solid fa-circle-check"></i>
+      </span>
+      <h1>Enter OTP Code</h1>
+      <div class="input-verify">
+        <input type="text" class="input-num" maxlength="1" />
+        <input type="text" class="input-num" maxlength="1" disabled />
+        <input type="text" class="input-num" maxlength="1" disabled />
+        <input type="text" class="input-num" maxlength="1" disabled />
+      </div>
+      <div class="resend">
+        <p>
+          Didn't get the OTP
+          <a href="#Resend">Resend</a>
+        </p>
+      </div>
+      <button class="btn-verify">Verify OTP</button>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
