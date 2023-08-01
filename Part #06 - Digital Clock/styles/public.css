@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --dark-blue: #07253a;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-blue);
+  min-height: 100vh;
+  user-select: none;
+  font-family: Orbitron;
+}
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38em;
+  height: 10em;
+  border-radius: 1em;
+  border: 0.15em solid var(--white);
+}
+.clock .style {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 7.5em;
+  height: 7.5em;
+  background: var(--white);
+  color: var(--black);
+  border-radius: 0.8em;
+}
+.clock .style .text {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.clock .style span {
+  color: var(--black);
+  font-size: 0.8rem;
+}
+.clock span {
+  font-size: 1.1rem;
+  color: var(--white);
+  font-weight: bold;
+  margin: 0 0.5em 0 0.5em;
+}
