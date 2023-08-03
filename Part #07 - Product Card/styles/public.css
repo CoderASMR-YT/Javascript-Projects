@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --light-gray: #212326;
+  --blue: #0a2c45;
+  --red: #ab2932;
+  --yellow: #eabb4f;
+  --light-blue: #48c3c1;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  user-select: none;
+  font-family: Poppins;
+  background-color: var(--blue);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 16em;
+  padding: 1.5em 1em;
+  border-radius: 0.8em;
+  background-color: var(--white);
+  border: 0.15em solid var(--light-gray);
+}
+.container #image {
+  width: 10em;
+  height: 5em;
+}
+.container h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 2em 0 0 0;
+  color: var(--black);
+}
+.container .details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 16em;
+  padding: 1em 1em 0 1em;
+}
+.section-size .size span {
+  padding: 0.5em;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 0.13em solid var(--black);
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin: 0.1em;
+}
+.section-size .size span:hover {
+  background-color: var(--light-blue);
+  color: var(--white);
+  border: 0.13em solid var(--light-blue);
+  transition: all 0.3s ease;
+}
+.color .btn-color {
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0 0.3em;
+  border-radius: 0.4em;
+}
+.color #red {
+  background-color: var(--red);
+}
+.color #yellow {
+  background-color: var(--yellow);
+}
+.color #blue {
+  background-color: var(--light-blue);
+}
+.details .section-size,
+.section-color {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 0 1em 0;
+}
+.container .section-size h2,
+.section-color h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.section-size .size,
+.section-color .color {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 0.4em 0 0 0;
+}
+.section-buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 16em;
+  padding: 0.5em 1em 0 1em;
+}
+.section-buy h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--black);
+  margin: 0;
+}
+.section-buy .btn-buy {
+  width: 8em;
+  padding: 0.4em 1em;
+  text-align: center;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 0.4em;
+  font-size: 1rem;
+  font-weight: bold;
+}
