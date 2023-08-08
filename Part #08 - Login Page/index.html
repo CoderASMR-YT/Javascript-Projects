@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-section">
+        <h1>Login</h1>
+        <div class="input-box">
+          <input type="text" required />
+          <label>Enter your email</label>
+        </div>
+        <div class="input-box">
+          <input type="password" class="password" required />
+          <label>Enter your password</label>
+          <div class="eye-wrapper">
+            <span class="close">
+              <i class="fa-regular fa-eye-slash"></i>
+            </span>
+            <span class="open">
+              <i class="fa-regular fa-eye"></i>
+            </span>
+          </div>
+        </div>
+        <div class="remember-forgot">
+          <label for="remember">
+            <input type="checkbox" id="remember" />
+            <p>Remember me</p>
+          </label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button class="btn-login">login</button>
+        <div class="register">
+          <p>Don't an account?<a href="#">Register</a></p>
+        </div>
+      </form>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

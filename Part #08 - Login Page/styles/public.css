@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --white: #ffffff;
+  --light-gray: #ffffff80;
+  --gray: #cccccc;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  user-select: none;
+  font-family: Poppins;
+  background: url("../assets/media/background.jpg") center center;
+  background-size: cover;
+}
+.container {
+  width: 20em;
+  padding: 1.5em;
+  border-radius: 0.6em;
+  backdrop-filter: blur(01.5em);
+  text-align: center;
+  border: 0.1em solid var(--light-gray);
+}
+.container .form-section {
+  display: flex;
+  flex-direction: column;
+}
+.form-section h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--white);
+  margin: 0 0 1em 0;
+}
+.form-section .input-box {
+  position: relative;
+  border-bottom: 0.1em solid var(--gray);
+  margin: 0 0 2em 0;
+}
+.form-section .input-box label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: var(--white);
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.2s ease;
+}
+.input-box input {
+  width: 100%;
+  height: 2.4em;
+  font-size: 1.2rem;
+  color: var(--white);
+  font-family: Poppins;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  font-size: 0.8rem;
+  top: 0.6em;
+  transform: translateY(-120%);
+}
+.input-box .eye-wrapper {
+  position: absolute;
+  height: 1.7em;
+  width: 1.7em;
+  background-color: transparent;
+  color: var(--white);
+  right: 0;
+  top: 0.7em;
+  border-radius: 1em;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.5s;
+}
+.eye-wrapper .close {
+  display: block;
+}
+.eye-wrapper .open {
+  display: none;
+}
+.eye-wrapper .close,
+.open {
+  position: absolute;
+  transform: translate(0.2em, 0.4em);
+  font-size: 1rem;
+}
+.form-section .remember-forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 0 1em 0;
+  color: var(--white);
+}
+.form-section .remember-forgot label {
+  display: flex;
+  align-items: center;
+}
+.remember-forgot label #remember {
+  accent-color: var(--white);
+  cursor: pointer;
+}
+.container .btn-login {
+  padding: 0.75em 1.25em;
+  cursor: pointer;
+  border-radius: 0.3em;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1.5em 0;
+  background-color: var(--white);
+  transition: 0.3s ease;
+  border: 0.2em solid transparent;
+  text-transform: uppercase;
+}
+.container .btn-login:hover {
+  color: var(--white);
+  border-color: var(--white);
+  background-color: var(--light-gray);
+}
+.register p {
+  color: var(--white);
+}
+.register p a:hover {
+  text-decoration: underline;
+}
+.remember-forgot label p,
+.register p a {
+  margin-left: 0.5em;
+}
+.remember-forgot a,
+.register p a {
+  color: var(--white);
+  text-decoration: none;
+}
