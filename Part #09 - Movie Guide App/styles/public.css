@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --yellow: #f8b92a;
+  --light-gray: #a0a0a0;
+  --gray: #ffffff1a;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  user-select: none;
+  font-family: Poppins;
+  background-color: var(--black);
+  color: var(--white);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--gray);
+  padding: 2em 1em;
+  border-radius: 1em;
+}
+.container .search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 54em;
+}
+.search-box #search {
+  width: 35em;
+  padding: 0.6em;
+  border: 0.15em solid var(--white);
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: Poppins;
+  border-radius: 0.3em;
+  color: var(--white);
+}
+.search-box #search:focus {
+  border: 0.15em solid var(--yellow);
+}
+.search-box .btn-search {
+  width: 7em;
+  padding: 0.55em;
+  background-color: var(--yellow);
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 0.3em;
+  border: 0.2em solid var(--yellow);
+  transition: all 0.3s ease;
+}
+.search-box .btn-search:hover {
+  border: 0.2em solid var(--yellow);
+  background-color: var(--white);
+  color: var(--yellow);
+  transition: all 0.3s ease;
+}
+.container .result-movie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 54em;
+  padding: 1em;
+  margin: 1em 0 0 0;
+}
+.result-movie .img-movie {
+  border-radius: 0.2em;
+  height: 24em;
+  margin: 0 3em 0 0;
+}
+.result-movie .container-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 36em;
+}
+.container-info h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.container-info .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 2em 0 2em 0;
+  width: 8em;
+}
+.details .year {
+  font-size: 1rem;
+}
+.details .rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details .rating i {
+  color: var(--yellow);
+  font-size: 1.4rem;
+}
+.details .rating span {
+  font-size: 1rem;
+  margin: 0 0 0 0.4em;
+}
+.container-info .genre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.container-info .genre span {
+  border: 0.15em solid var(--yellow);
+  font-size: 0.8rem;
+  padding: 0.6em;
+  border-radius: 0.4em;
+  margin: 0 0 0 1em;
+}
+.container-info .actors {
+  margin: 2em 0 2em 0;
+}
+.container-info .actors,
+.plot {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-info .actors h3,
+.plot h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.container-info .actors p,
+.plot p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--light-gray);
+  line-height: 1.8em;
+}
