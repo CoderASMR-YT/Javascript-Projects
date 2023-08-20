@@ -1,0 +1,60 @@
+:root {
+  --white: #ffffff;
+  --blue: #0a2c45;
+  --dark-blue: #07253a;
+  --light-blue: #4e7edf;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  user-select: none;
+  background-color: var(--dark-blue);
+}
+.container-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-menu a,
+.btn-menu {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--white);
+  font-size: 2.5rem;
+}
+.container-menu a {
+  width: 1.5em;
+  height: 1.5em;
+  color: var(--dark-blue);
+  text-decoration: none;
+  transition: 0.5s;
+  border: 0.1em solid var(--white);
+}
+.container-menu a:hover {
+  border-color: var(--light-blue);
+  transition: 0.2s;
+}
+.container-menu a i {
+  color: var(--blue);
+}
+.container-menu .btn-menu {
+  width: 2em;
+  height: 2em;
+  transition: 0.3s;
+  border: 0.1em solid var(--white);
+}
+.container-menu .btn-menu:hover,
+.active {
+  border-color: var(--white);
+  color: var(--white);
+  background-color: var(--dark-blue);
+  transition: 0.2s;
+}
+.active {
+  transform: rotate(45deg);
+}
