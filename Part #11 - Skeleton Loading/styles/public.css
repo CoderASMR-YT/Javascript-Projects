@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #253659;
+  --dark-blue: #07253a;
+  --light-blue: #2462e3;
+  --gray: #a0a0a0;
+  --light-gray: linear-gradient(
+    120deg,
+    #e5e5e5 30%,
+    #f0f0f0 38%,
+    #f0f0f0 40%,
+    #e5e5e5 48%
+  );
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  user-select: none;
+  font-family: Poppins;
+  background-color: var(--dark-blue);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 18em;
+  padding: 1.8em 1em 0 1em;
+  background-color: var(--white);
+}
+.container .img-product {
+  margin: 0 0 1em 0;
+}
+.img-product img {
+  width: 100%;
+  height: 12em;
+}
+.container h1 {
+  color: var(--black);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.container h1:nth-of-type(2) {
+  color: var(--light-blue);
+}
+.container p {
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 1em 0;
+}
+.container .btn-buy {
+  width: 20em;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1em;
+  margin: 1.5em 0 0 0;
+}
+.container .skeleton {
+  position: relative;
+}
+.container .skeleton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--light-gray);
+  background-size: 200% 100%;
+  z-index: 100;
+  border-radius: inherit;
+  animation: skeleton 1s infinite;
+}
+@keyframes skeleton {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
