@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+:root {
+  --white: #ffffff;
+  --gray: #212121;
+  --bg-color: rgba(255, 255, 255, 0.3);
+
+  --tran: width 0.1s linear;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  user-select: none;
+  font-family: Montserrat;
+  backdrop-filter: blur(0.4em);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 18em;
+  height: 24em;
+  padding: 1em;
+  background-color: var(--bg-color);
+  border-radius: 0.6em;
+}
+.container .img-music {
+  width: 15em;
+  height: 15em;
+  border-radius: 10em;
+  border: 0.3em solid var(--white);
+  overflow: hidden;
+}
+.img-music img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: rotate 4s linear infinite;
+  animation-play-state: paused;
+}
+.container .details {
+  text-align: center;
+}
+.details h1 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--white);
+}
+.details p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--white);
+  margin: 0.5em 0 0 0;
+}
+.container .music-progress {
+  height: 0.3em;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+.music-progress .progress {
+  background-color: var(--gray);
+  border-radius: 0.3em;
+  height: 100%;
+  width: 0%;
+  transition: var(--tran);
+}
+.music-progress .music-duration {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-1.6em);
+}
+.music-duration .current-time,
+.duration {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--white);
+}
+.container .music-controls {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+.music-controls #prev,
+#play,
+#next {
+  margin: 0 0.3em;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: var(--white);
+}
+.music-controls #play {
+  width: 0.8em;
+  font-size: 2rem;
+  transform: translateY(-0.1em);
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

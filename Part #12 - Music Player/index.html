@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-music">
+        <img src="" alt="img" />
+      </div>
+      <div class="details">
+        <h1></h1>
+        <p></p>
+      </div>
+      <div class="music-progress">
+        <div class="progress"></div>
+        <div class="music-duration">
+          <span class="current-time">00:00</span>
+          <span class="duration">00:00</span>
+        </div>
+      </div>
+      <div class="music-controls">
+        <i class="fa-solid fa-backward" title="Previous" id="prev"></i>
+        <i class="fa-solid fa-play" title="Play" id="play"></i>
+        <i class="fa-solid fa-forward" title="Next" id="next"></i>
+      </div>
+    </div>
+    <script src="./js/music-list.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
