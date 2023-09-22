@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+:root {
+  --white: #ffffff;
+  --blue: #0a2c45;
+  --dark-blue: #07253a;
+
+  --tran: all 0.4s ease;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  min-height: 100vh;
+  font-family: Poppins;
+  background-color: var(--dark-blue);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 20em;
+  padding: 2em;
+  border-radius: 0.4em;
+  background-color: var(--white);
+}
+.container .dice-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+.dice-wrapper img {
+  width: 5em;
+}
+.container .btn {
+  width: 10em;
+  padding: 0.8em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--blue);
+  border: 0.2em solid var(--blue);
+  color: var(--white);
+  border-radius: 0.4em;
+  margin: 3em 0 0 0;
+  transition: var(--tran);
+}
+.container .btn:hover {
+  color: var(--blue);
+  background-color: var(--white);
+  border-color: var(--blue);
+}
+.shake {
+  animation: shake 0.5s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
