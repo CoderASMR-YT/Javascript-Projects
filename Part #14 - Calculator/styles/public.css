@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --white: #ffffff;
+  --blue: #0d344f;
+  --dark-blue: #07253a;
+  --light-blue: #52c9dc;
+  --bg-color: linear-gradient(#ffffff 50%, #d1ecff 50%);
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  user-select: none;
+  font-family: Montserrat;
+  background: var(--bg-color);
+}
+.calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 20em;
+  padding: 0.5em 0.1em;
+  background-color: var(--dark-blue);
+  border-radius: 0.4em;
+}
+.calculator .output {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.5em 0;
+  width: 17em;
+  height: 5em;
+  overflow: hidden;
+  margin: 0 0 0.3em 0;
+}
+.output .prev-display,
+.curr-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.output .prev-display {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--white);
+  word-break: break-all;
+  height: 1em;
+}
+.output .curr-display {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--white);
+  word-break: break-all;
+  height: 1em;
+}
+.calculator .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.buttons .button {
+  background-color: var(--blue);
+}
+.buttons .button,
+.operator,
+.clear,
+.del,
+.equal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+  padding: 1em;
+  margin: 0.35em;
+  border-radius: 0.2em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--white);
+}
+.buttons .operator,
+.clear,
+.del,
+.equal {
+  background-color: var(--light-blue);
+}
