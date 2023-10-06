@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+:root {
+  --white: #ffffff;
+  --blue: #387be2;
+  --light-blue: #d9e5f9;
+  --dark-blue: #07253a;
+  --gray: #888888;
+
+  --tran: all 300ms ease-in-out;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  user-select: none;
+  font-family: Poppins;
+  background-color: var(--dark-blue);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2em;
+  background-color: var(--white);
+  border-radius: 0.5em;
+}
+.container .tab-header {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+}
+.tab-header .tab-title {
+  position: relative;
+  width: 5.5em;
+  text-align: center;
+  padding: 1em 0.2em;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--gray);
+  cursor: pointer;
+  transition: var(--tran);
+}
+.tab-header .tab-title.active {
+  color: var(--blue);
+}
+.tab-header .tab-indicator {
+  position: absolute;
+  width: 6em;
+  height: 0.3em;
+  left: 0;
+  background-color: var(--light-blue);
+  border-radius: 0.2em;
+  transition: var(--tran);
+}
+.container .content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32em;
+  margin: 1.5em 0 0 0;
+  overflow: hidden;
+}
+.content-box .text {
+  display: none;
+  animation: moving 0.5s ease;
+}
+.content-box .text.active {
+  display: block;
+}
+.text h1 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.text p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+@keyframes moving {
+  from {
+    transform: translateX(2em);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
