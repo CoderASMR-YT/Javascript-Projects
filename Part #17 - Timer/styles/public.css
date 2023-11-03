@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --dark-blue: #07253a;
+
+  --tran: all 0.4s ease;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  user-select: none;
+  font-family: Poppins;
+  background-color: var(--dark-blue);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2em;
+  background-color: var(--white);
+  border-radius: 0.5em;
+}
+.container .timer {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--black);
+  margin: 0 0 1em 0;
+}
+.container .wrapper-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.wrapper-btn .btn {
+  width: 8em;
+  padding: 0.5em;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border: 0.2em solid var(--dark-blue);
+  margin: 0 1em;
+  border-radius: 2em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: var(--tran);
+}
+.wrapper-btn .btn:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  border-color: var(--dark-blue);
+}
